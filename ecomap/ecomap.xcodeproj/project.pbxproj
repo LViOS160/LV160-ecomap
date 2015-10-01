@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03B1BC005E13B3CDC884086F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC970330F7C53C912ED19D0D /* libPods.a */; };
+		842FCFD21BBBFD5300612884 /* AddProblemSolutionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FCFD11BBBFD5300612884 /* AddProblemSolutionView.m */; };
 		9096C98D1A91E8DA00A61CDB /* (null) in Sources */ = {isa = PBXBuildFile; };
 		B30E2DBC1A9DDD340039DBBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30E2DBB1A9DDD340039DBBD /* Foundation.framework */; };
 		B30E2DBE1A9DDD3A0039DBBD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30E2DBD1A9DDD3A0039DBBD /* CFNetwork.framework */; };
@@ -123,6 +124,8 @@
 /* Begin PBXFileReference section */
 		297826EF813E17D3E56E38B4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4928809254C217F84D5D52F8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		842FCFD01BBBFD5300612884 /* AddProblemSolutionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddProblemSolutionView.h; path = ecomap/AddProblem/Views/AddProblemSolutionView.h; sourceTree = SOURCE_ROOT; };
+		842FCFD11BBBFD5300612884 /* AddProblemSolutionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddProblemSolutionView.m; path = ecomap/AddProblem/Views/AddProblemSolutionView.m; sourceTree = SOURCE_ROOT; };
 		B30E2DBB1A9DDD340039DBBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B30E2DBD1A9DDD3A0039DBBD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B30E2DBF1A9DDD410039DBBD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -422,6 +425,8 @@
 			children = (
 				B3738B5C1A9DDC4B0077F604 /* AddProblemViewController.h */,
 				B3738B5D1A9DDC4B0077F604 /* AddProblemViewController.m */,
+				842FCFD01BBBFD5300612884 /* AddProblemSolutionView.h */,
+				842FCFD11BBBFD5300612884 /* AddProblemSolutionView.m */,
 				B3738B5E1A9DDC4B0077F604 /* Defines.h */,
 			);
 			path = Controllers;
@@ -1008,6 +1013,7 @@
 				B3738C261A9DDC4B0077F604 /* LocalImageDescription.m in Sources */,
 				B3738C1F1A9DDC4B0077F604 /* SRWebSocket.m in Sources */,
 				B3738C2F1A9DDC4B0077F604 /* EcomapPhoto.m in Sources */,
+				842FCFD21BBBFD5300612884 /* AddProblemSolutionView.m in Sources */,
 				B3738C401A9DDC4B0077F604 /* PieChartViewController.m in Sources */,
 				B3738C361A9DDC4B0077F604 /* PhotoViewController.m in Sources */,
 				B3738C201A9DDC4B0077F604 /* XYPieChart.m in Sources */,
