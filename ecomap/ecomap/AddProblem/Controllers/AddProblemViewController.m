@@ -8,7 +8,7 @@
 
 #import "AddProblemViewController.h"
 
-@interface AddProblemViewController () {
+@interface AddProblemViewController (){
     CGFloat padding;
     CGFloat paddingWithNavigationView;
     CGFloat screenWidth;
@@ -37,14 +37,12 @@
 @property (nonatomic, strong) UIView* prevView;
 @property (nonatomic, strong) UIView* nextView;
 
-
-
-
 @end
 
 @implementation AddProblemViewController
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(orientationChanged:)
                                                  name:UIDeviceOrientationDidChangeNotification
@@ -102,6 +100,7 @@
 }
 
 - (void)switchPage{
+    
     switch (_pageControl.currentPage) {
         case 0:
             _prevButton.hidden = YES;
