@@ -31,6 +31,13 @@
 #pragma mark - Get all Problems
 +(void)loadAllProblemsOnCompletion:(void (^)(NSArray *problems, NSError *error))completionHandler
 {
+    
+    
+    NSLog(@"my request %@",[EcomapURLFetcher URLforAllProblems]);
+    
+    NSString *baseUrlProblems = @"http://ecomap.org/api/problems";
+    NSURL* currentUrl = [NSURL URLWithString:baseUrlProblems];
+   
     [self dataTaskWithRequest:[NSURLRequest requestWithURL:[EcomapURLFetcher URLforAllProblems]]
              sessionConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]
                 completionHandler:^(NSData *JSON, NSError *error) {
@@ -66,7 +73,10 @@
 #pragma mark - Load All Problem Types
 + (void)loadAllPorblemTypes:(void (^)(NSArray *problemTypes, NSError *error))completionHandler {
    
-    [self dataTaskWithRequest:[NSURLRequest requestWithURL:[EcomapURLFetcher URLforAllProblems]]
+    NSString *baseUrlProblems = @"http://ecomap.org/api/problems";
+    NSURL* currentUrl = [NSURL URLWithString:baseUrlProblems];
+    
+    [self dataTaskWithRequest:[NSURLRequest requestWithURL:currentUrl]//[EcomapURLFetcher URLforAllProblems]]
              sessionConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]
                 completionHandler:^(NSData *JSON, NSError *error) {
                     NSMutableArray *problemTypes = nil;
